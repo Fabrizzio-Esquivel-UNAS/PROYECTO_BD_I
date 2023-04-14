@@ -1,4 +1,5 @@
 <?php
-    # Redireccionar al formulario de Login
-    header("Location: http://localhost/ejemplo2/views/login.html");
+    include "controladores/principal.php";
+    $controlador = new controladores\principal();
+    $controlador->presentarPantalla();
 ?>
